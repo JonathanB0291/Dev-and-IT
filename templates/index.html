@@ -56,28 +56,57 @@
         </div>
     </section>
 
-    <section id="portafolio" class="portfolio">
-        <h2>Nuestro Portafolio</h2>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
-                <div class="portfolio-overlay">
-                    <h3>E-commerce Platform</h3>
-                    <p>Desarrollo Frontend y Backend</p>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/Jony.png') }}" alt="Portfolio Personal">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Portfolio Personal</h3>
+                    <p>Mi portfolio personal que muestra mis proyectos y habilidades en desarrollo web.</p>
+                    <div class="portfolio-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Netlify</span>
+                    </div>
+                    <a href="https://jonathanbarroso-portfolio.netlify.app/" class="portfolio-link" target="_blank">Ver Proyecto</a>
                 </div>
             </div>
+
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
-                <div class="portfolio-overlay">
-                    <h3>CRM Empresarial</h3>
-                    <p>Python Backend</p>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/clima.png') }}" alt="App del Clima">
+                </div>
+                <div class="portfolio-content">
+                    <h3>App del Clima</h3>
+                    <p>Aplicación web que muestra el pronóstico del tiempo en tiempo real usando APIs de clima.</p>
+                    <div class="portfolio-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API Clima</span>
+                    </div>
+                    <a href="https://clima-ya.netlify.app/" class="portfolio-link" target="_blank">Ver Proyecto</a>
                 </div>
             </div>
+
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
-                <div class="portfolio-overlay">
-                    <h3>Portal de Empleo</h3>
-                    <p>Full Stack Development</p>
+                <div class="portfolio-image">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Psicóloga Sofía">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Psicóloga Sofía</h3>
+                    <p>Sitio web profesional para consultas psicológicas online y presenciales.</p>
+                    <div class="portfolio-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a href="https://psicologa-sofia.netlify.app/" class="portfolio-link" target="_blank">Ver Proyecto</a>
                 </div>
             </div>
         </div>

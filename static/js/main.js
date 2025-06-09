@@ -67,4 +67,29 @@ document.querySelectorAll('.service-card').forEach(card => {
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(card);
+});
+
+// Portfolio animations
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+const portfolioObserverOptions = {
+    threshold: 0.2,
+    rootMargin: '0px'
+};
+
+const portfolioObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            portfolioObserver.unobserve(entry.target);
+        }
+    });
+}, portfolioObserverOptions);
+
+portfolioItems.forEach(item => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(50px)';
+    item.style.transition = 'all 0.6s ease-out';
+    portfolioObserver.observe(item);
 }); 
