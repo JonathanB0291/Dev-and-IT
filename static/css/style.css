@@ -285,6 +285,10 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
 
 /* Contact Section */
 .contact {
